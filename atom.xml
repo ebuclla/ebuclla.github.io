@@ -3,11 +3,11 @@
   <title>Hexo</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://tomotoes.com/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2025-03-09T08:59:49.337Z</updated>
-  <id>http://example.com/</id>
+  <link href="http://tomotoes.com/"/>
+  <updated>2025-03-09T08:59:57.973Z</updated>
+  <id>http://tomotoes.com/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>test title</title>
-    <link href="http://example.com/2025/03/09/Test_theme/"/>
-    <id>http://example.com/2025/03/09/Test_theme/</id>
+    <link href="http://tomotoes.com/posts/23712/"/>
+    <id>http://tomotoes.com/posts/23712/</id>
     <published>2025-03-09T08:42:30.856Z</published>
-    <updated>2025-03-09T08:59:49.337Z</updated>
+    <updated>2025-03-09T08:59:57.973Z</updated>
     
     <content type="html"><![CDATA[<p>test theme</p>]]></content>
     
@@ -35,8 +35,8 @@
   
   <entry>
     <title>test_blog</title>
-    <link href="http://example.com/2025/03/09/test_blog/"/>
-    <id>http://example.com/2025/03/09/test_blog/</id>
+    <link href="http://tomotoes.com/posts/undefined/"/>
+    <id>http://tomotoes.com/posts/undefined/</id>
     <published>2025-03-09T08:22:45.000Z</published>
     <updated>2025-03-09T08:24:49.903Z</updated>
     
@@ -47,19 +47,19 @@
     
     
     
-    <category term="abc" scheme="http://example.com/categories/abc/"/>
+    <category term="abc" scheme="http://tomotoes.com/categories/abc/"/>
     
-    <category term="Diary" scheme="http://example.com/categories/abc/Diary/"/>
+    <category term="Diary" scheme="http://tomotoes.com/categories/abc/Diary/"/>
     
     
-    <category term="abc" scheme="http://example.com/tags/abc/"/>
+    <category term="abc" scheme="http://tomotoes.com/tags/abc/"/>
     
   </entry>
   
   <entry>
     <title>My New Post</title>
-    <link href="http://example.com/2025/03/09/My-New-Post/"/>
-    <id>http://example.com/2025/03/09/My-New-Post/</id>
+    <link href="http://tomotoes.com/posts/undefined/"/>
+    <id>http://tomotoes.com/posts/undefined/</id>
     <published>2025-03-09T07:59:35.000Z</published>
     <updated>2025-03-09T08:19:54.988Z</updated>
     
@@ -75,14 +75,14 @@
     
     
     
-    <category term="nothing" scheme="http://example.com/tags/nothing/"/>
+    <category term="nothing" scheme="http://tomotoes.com/tags/nothing/"/>
     
   </entry>
   
   <entry>
     <title>fxxk World</title>
-    <link href="http://example.com/2025/03/09/fxxk-world/"/>
-    <id>http://example.com/2025/03/09/fxxk-world/</id>
+    <link href="http://tomotoes.com/posts/undefined/"/>
+    <id>http://tomotoes.com/posts/undefined/</id>
     <published>2025-03-09T07:54:49.775Z</published>
     <updated>2025-03-09T08:10:22.398Z</updated>
     
