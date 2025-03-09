@@ -40,6 +40,33 @@
   </entry>
   
   <entry>
+    <title>test_blog</title>
+    <link href="http://example.com/2025/03/09/Test_theme/"/>
+    <id>http://example.com/2025/03/09/Test_theme/</id>
+    <published>2025-03-09T08:22:45.000Z</published>
+    <updated>2025-03-09T08:47:34.222Z</updated>
+    
+    <content type="html"><![CDATA[<p>c</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;c&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="abc" scheme="http://example.com/categories/abc/"/>
+    
+    <category term="Diary" scheme="http://example.com/categories/abc/Diary/"/>
+    
+    
+    <category term="abc" scheme="http://example.com/tags/abc/"/>
+    
+  </entry>
+  
+  <entry>
     <title>My New Post</title>
     <link href="http://example.com/2025/03/09/My-New-Post/"/>
     <id>http://example.com/2025/03/09/My-New-Post/</id>
