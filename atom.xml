@@ -3,11 +3,11 @@
   <title>Hexo</title>
   
   
-  <link href="http://tomotoes.com/atom.xml" rel="self"/>
+  <link href="http://example.com/atom.xml" rel="self"/>
   
-  <link href="http://tomotoes.com/"/>
+  <link href="http://example.com/"/>
   <updated>2025-03-09T08:59:57.973Z</updated>
-  <id>http://tomotoes.com/</id>
+  <id>http://example.com/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>test title</title>
-    <link href="http://tomotoes.com/posts/23712/"/>
-    <id>http://tomotoes.com/posts/23712/</id>
+    <link href="http://example.com/2025/03/09/Test_theme/"/>
+    <id>http://example.com/2025/03/09/Test_theme/</id>
     <published>2025-03-09T08:42:30.856Z</published>
     <updated>2025-03-09T08:59:57.973Z</updated>
     
