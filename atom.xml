@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-10-15T13:48:32.903Z</updated>
+  <updated>2025-10-16T06:47:44.329Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leetcode 70</title>
+    <link href="http://example.com/2025/10/16/leetcode-70/"/>
+    <id>http://example.com/2025/10/16/leetcode-70/</id>
+    <published>2025-10-16T06:26:48.000Z</published>
+    <updated>2025-10-16T06:47:44.329Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="leetcode-70-爬楼梯"><a href="#leetcode-70-爬楼梯" class="headerlink" title="leetcode 70 爬楼梯"></a>leetcode 70 爬楼梯</h1><p>题目描述</p><p>假设你正在爬楼梯。需要 <code>n</code> 阶你才能到达楼顶。</p><p>每次你可以爬 <code>1</code> 或 <code>2</code> 个台阶。你有多少种不同的方法可以爬到楼顶呢？</p><p>一个动态规划问题</p><p>状态转移方程<br>$$<br>times[s] = times[s-1] + times[s-2]<br>$$<br>初始状态，第一层爬法有1种，第零层有0种，代码为</p><div class="code-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> {</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">climbStairs</span><span class="params">(<span class="type">int</span> n)</span> </span>{</span><br><span class="line">        <span class="comment">// times[s] = times[s-1] + times[s-2]   </span></span><br><span class="line">        <span class="type">int</span> s = <span class="number">1</span> ;</span><br><span class="line">        <span class="type">int</span> s_1 = <span class="number">0</span> ;</span><br><span class="line">        <span class="type">int</span> tmp = <span class="number">0</span> ;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++){</span><br><span class="line">            tmp = s;</span><br><span class="line">            s = s + s_1;</span><br><span class="line">            s_1 = tmp; </span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">return</span> s;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;leetcode-70-爬楼梯&quot;&gt;&lt;a href=&quot;#leetcode-70-爬楼梯&quot; class=&quot;headerlink&quot; title=&quot;leetcode 70 爬楼梯&quot;&gt;&lt;/a&gt;leetcode 70 爬楼梯&lt;/h1&gt;&lt;p&gt;题目描述&lt;/p&gt;
+&lt;p&gt;假设你正在爬</summary>
+      
+    
+    
+    
+    
+    <category term="算法 动态规划" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
   
   <entry>
     <title>测试博客</title>
