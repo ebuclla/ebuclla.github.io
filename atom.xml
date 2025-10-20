@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-10-18T05:14:25.637Z</updated>
+  <updated>2025-10-20T02:40:11.948Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>leetcode-172</title>
+    <link href="http://example.com/2025/10/20/leetcode-172/"/>
+    <id>http://example.com/2025/10/20/leetcode-172/</id>
+    <published>2025-10-20T02:28:12.000Z</published>
+    <updated>2025-10-20T02:40:11.948Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Leetcode-172-阶乘后的零"><a href="#Leetcode-172-阶乘后的零" class="headerlink" title="Leetcode 172 阶乘后的零"></a>Leetcode 172 阶乘后的零</h1><p>给定一个整数 <code>n</code> ，返回 <code>n!</code> 结果中尾随零的数量。</p><p>提示 <code>n! = n * (n - 1) * (n - 2) * ... * 3 * 2 * 1</code></p><p>由于对于任意的n! 只需要一个因子5和一个因子2就可以贡献一个尾部的0，而很明显，2因子明显比5因子多得多，实际上我们只需要考虑n!有多少个因子5就可以了</p><p>可以得知，n 每增长 5 ，就会多一个因子5，每增长25，就会多两个因子5，以此类推，每增长5^n^，就会多n个因子五，</p><p>实际计算过程中，可以把25的一个因子按照每增长5多一个因子 每增长25多一个因子共同组成了25的两个因子来计算，换句话说，可以抽象成下面的公式<br>$$<br>r_zero  = \sum_{k=1}^{n&lt;5^k}\frac{n}{5^k}<br>$$</p><div class="code-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> {</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">trailingZeroes</span><span class="params">(<span class="type">int</span> n)</span> </span>{</span><br><span class="line">       <span class="type">long</span> i = <span class="number">5</span>;</span><br><span class="line">        <span class="type">int</span> r_zero = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(n &gt;= i){</span><br><span class="line">            r_zero = r_zero + n / i;</span><br><span class="line">            i = i * <span class="number">5</span>; </span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">return</span> r_zero;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Leetcode-172-阶乘后的零&quot;&gt;&lt;a href=&quot;#Leetcode-172-阶乘后的零&quot; class=&quot;headerlink&quot; title=&quot;Leetcode 172 阶乘后的零&quot;&gt;&lt;/a&gt;Leetcode 172 阶乘后的零&lt;/h1&gt;&lt;p&gt;给定一个整数</summary>
+      
+    
+    
+    
+    
+    <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>leetcode-300</title>
     <link href="http://example.com/2025/10/18/leetcode-300/"/>
     <id>http://example.com/2025/10/18/leetcode-300/</id>
     <published>2025-10-18T05:12:50.000Z</published>
-    <updated>2025-10-18T05:14:25.637Z</updated>
+    <updated>2025-10-18T05:14:45.324Z</updated>
     
     <content type="html"><![CDATA[<h1 id="300-最长递增子序列"><a href="#300-最长递增子序列" class="headerlink" title="300. 最长递增子序列"></a>300. 最长递增子序列</h1><p>给你一个整数数组 <code>nums</code> ，找到其中最长严格递增子序列的长度。</p><p><strong>子序列</strong> 是由数组派生而来的序列，删除（或不删除）数组中的元素而不改变其余元素的顺序。例如，<code>[3,6,2,7]</code> 是数组 <code>[0,3,1,6,2,2,7]</code> 的子序列。</p><p>递推公式</p><p>dp[0] = 1</p><p>dp[1] = nums[1]&gt;nums[0]?2:1</p><p>dp[i] = max(dp[j]) + 1 if nums[i] &gt; nums[j]</p><div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> {</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">lengthOfLIS</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>{</span><br><span class="line">        <span class="type">int</span> length = nums.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">if</span>(length == <span class="number">1</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">dp</span><span class="params">(length, <span class="number">1</span>)</span></span>;</span><br><span class="line">        dp[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">        dp[<span class="number">1</span>] = nums[<span class="number">1</span>]&gt;nums[<span class="number">0</span>]?<span class="number">2</span>:<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; length; i++)</span><br><span class="line">        {</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; j &lt; i; j++){</span><br><span class="line">                <span class="keyword">if</span>((nums[i] &gt; nums[j]) &amp;&amp; (dp[i] &lt;= dp[j]))</span><br><span class="line">                {</span><br><span class="line">                    dp[i] = dp[j] + <span class="number">1</span>;</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> *<span class="built_in">max_element</span>(dp.<span class="built_in">begin</span>(), dp.<span class="built_in">end</span>());</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure></div>]]></content>
     
